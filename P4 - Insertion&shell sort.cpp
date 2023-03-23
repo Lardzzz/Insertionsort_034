@@ -15,7 +15,7 @@ void input() {													//prosedur input
 		}
 		else
 		{
-			cout << "m\Array yang anda maskkan maksimal 20 elemen.\n"; //menampilkan pesan jika data lebih dari 20
+			cout << "n\Array yang anda maskkan maksimal 20 elemen.\n"; //menampilkan pesan jika data lebih dari 20
 		}
 	}
 	cout << endl;												//membuat jarak perbaris program
@@ -37,7 +37,7 @@ void insertionsort() {											//prosedur insertionsort
 
 	for (int i = 1; i < n; i++) {								//looping dengan i dimulai dari 1 hingga n-1
 
-		temp = arr[1];											//simpan nilai arr[i] ke variabel sementara temp
+		temp = arr[i];											//simpan nilai arr[i] ke variabel sementara temp
 		
 		j = i - 1;												//setting nilai j sama dengan i-1;
 
@@ -55,6 +55,18 @@ void insertionsort() {											//prosedur insertionsort
 			cout << arr[k] << " ";								//output ke layar
 		}
 	}
+}
+
+void display() {												//prosedur display
+	cout << endl;												//output baris kosong
+	cout << "================================" << endl;			//output ke layar
+	cout << "Elemen Array yang telah tersusun" << endl;
+	cout << "================================" << endl;
+
+	for (int j = 0; j < n; j++) {								//looping dari j dimulai dari 0 hingga n-1
+		cout << arr[j] << endl;									//output ke layar
+	}
+	cout << endl;												//output baris kosong
 }
 
 int main() 
