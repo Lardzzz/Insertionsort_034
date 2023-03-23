@@ -4,7 +4,6 @@ using namespace std;
 int arr[20];													//membuat array dengan panjang data 20
 int n;															//membuat variabel inputan n
 
-
 void input() {													//prosedur input
 	while (true)				
 	{
@@ -58,8 +57,9 @@ void insertionsort() {											//prosedur insertionsort
 	}
 }
 
-int main() {
-	input();
-	insertionsort();
-	return 0;
+int main() 
+{
+	input();													//memanggil input
+	insertionsort();											//memanggil insertionsort
+	display();													//memanggil display
 }
