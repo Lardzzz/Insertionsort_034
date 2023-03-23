@@ -56,3 +56,9 @@ void insertionsort() {											//prosedur insertionsort
 		}
 	}
 }
+
+int main() {
+	input();
+	insertionsort();
+	return 0;
+}
